@@ -1,7 +1,6 @@
 import { Breakpoint } from '../config/breakpoints';
 
 export type Maybe<T> = T | null;
-
 export type Dimension = {
   height: number;
   width: number;
@@ -27,6 +26,8 @@ export enum MediaType {
 
 export type Media = {
   id: number;
+  name?: string;   // for TV shows or people
+  media_type?: string;
   title: string;
   overview: string;
   poster: string;
